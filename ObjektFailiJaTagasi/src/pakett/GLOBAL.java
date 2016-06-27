@@ -11,7 +11,7 @@ public class GLOBAL {
 	public static List<Student> students= new ArrayList<>();
 	public static Course course=new Course();
 	public static Student tudeng=new Student();
-	
+	public static String failiaadress=(System.getProperty("user.home")+"\\Desktop\\"+"tudengifail.txt");
 
 
 }

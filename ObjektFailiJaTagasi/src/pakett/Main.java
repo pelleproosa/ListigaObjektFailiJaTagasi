@@ -18,7 +18,9 @@ public class Main {
 		//	 GLOBAL.students.get(1).toString();
 			 
 			 Funktsioonid.TudengiListObjekti();
-			start.startimine();
+			 failitegevused.kirjutaKursusFaili();
+			 failitegevused.loeKursusFailist();
+			//failitegevused.kirjutamineJaLugemine();
 			Funktsioonid.suvalinekuvamineTEST();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
