@@ -71,4 +71,23 @@ System.out.println(tt.toString());
 System.out.println(tt.getTtylisainfo());
 }
 
+public static String stringiHakkimine(String sisendString, String Lipp1, String Lipp2){             // testitud : OK
+	String tagasiside="";
+	int asukoht1=0;
+	int asukoht2=0;
+	
+	if(sisendString.indexOf(Lipp1)!= -1){
+		if(sisendString.indexOf(Lipp2)!= -1){
+			asukoht1=sisendString.indexOf(Lipp1);   //leian viimase koha enne Lipp1  
+			asukoht2=sisendString.indexOf(Lipp2);   //leian viimase koha enne Lipp2
+			tagasiside=sisendString.substring(asukoht1, (asukoht2+1));
+		  
+		}else{System.out.println("Funktsioonid.stringiHakkimine: Lipp2 ei leitud");}
+	}else{System.out.println("Funktsioonid.stringiHakkimine: Lipp1 ei leitud");}
+	
+	
+	return tagasiside;
+}
+
+
 }
